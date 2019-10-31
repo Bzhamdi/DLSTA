@@ -189,12 +189,12 @@ class MnistDataVis:
         line1, = ax1.plot(self.x1, self.y1, label="training accuracy")
         line2, = ax1.plot(self.x2, self.y2, label="test accuracy")
         legend = ax1.legend(loc='lower right') # fancybox : slightly rounded corners
-        legend.draggable(True)
+        #legend.draggable(True)
 
         line3, = ax2.plot(self.x1, self.z1, label="training loss")
         line4, = ax2.plot(self.x2, self.z2, label="test loss")
         legend = ax2.legend(loc='upper right') # fancybox : slightly rounded corners
-        legend.draggable(True)
+        #legend.draggable(True)
 
         ax3.grid(False) # toggle grid off
         ax3.set_axis_off()
